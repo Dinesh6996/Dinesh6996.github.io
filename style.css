@@ -1217,3 +1217,32 @@ footer {
         padding: 9px 16px !important;
     }
 }
+/* FINAL HERO CONTENT FIX */
+
+.hero-content {
+    display: block !important;
+    width: 100% !important;
+    flex: none !important;
+}
+
+.hero-intro {
+    position: static !important;
+    display: block !important;
+    width: auto !important;
+}
+
+.hero-content h1,
+.hero-content h2,
+.hero-description {
+    display: block !important;
+}
+
+.hero-buttons {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+}
+
+.hero-photo {
+    align-self: center !important;
+}
