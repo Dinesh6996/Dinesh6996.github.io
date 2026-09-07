@@ -978,3 +978,242 @@ footer {
     }
 
 }
+
+/* =====================================================
+   FINAL HERO ALIGNMENT FIX
+   ===================================================== */
+
+.hero {
+    min-height: auto !important;
+    padding: 100px 7% 50px !important;
+    display: block !important;
+}
+
+.hero-container {
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+
+    display: grid !important;
+    grid-template-columns: 1.2fr 0.8fr !important;
+    align-items: center !important;
+    gap: 60px !important;
+}
+
+/* LEFT SIDE */
+
+.hero-content {
+    width: 100% !important;
+    text-align: left !important;
+}
+
+.hero-intro {
+    display: block !important;
+    position: static !important;
+    margin: 0 0 15px 0 !important;
+
+    color: #ff1e2d !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    letter-spacing: 4px !important;
+}
+
+.hero-content h1 {
+    margin: 0 0 25px 0 !important;
+    font-size: clamp(48px, 6vw, 82px) !important;
+    line-height: 0.95 !important;
+}
+
+.hero-content h1 span {
+    display: block !important;
+    color: #ff1e2d !important;
+}
+
+.hero-content h2 {
+    margin: 0 0 18px 0 !important;
+    font-size: 30px !important;
+    line-height: 1.2 !important;
+}
+
+.hero-description {
+    max-width: 600px !important;
+    margin: 0 0 30px 0 !important;
+
+    color: #bdbdbd !important;
+    font-size: 17px !important;
+    line-height: 1.7 !important;
+}
+
+/* BUTTONS */
+
+.hero-buttons {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    flex-wrap: wrap !important;
+    gap: 14px !important;
+}
+
+.hero-buttons .btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    min-height: 52px !important;
+    padding: 14px 24px !important;
+
+    white-space: nowrap !important;
+}
+
+
+/* RIGHT SIDE PHOTO */
+
+.hero-photo {
+    width: 340px !important;
+    height: 340px !important;
+
+    margin: 0 auto !important;
+
+    border-radius: 50% !important;
+    overflow: hidden !important;
+
+    border: 3px solid #ff1e2d !important;
+
+    background: transparent !important;
+
+    box-shadow: 0 0 35px rgba(255, 30, 45, 0.25) !important;
+}
+
+.hero-photo img {
+    width: 100% !important;
+    height: 100% !important;
+
+    display: block !important;
+
+    object-fit: cover !important;
+    object-position: center top !important;
+
+    border-radius: 50% !important;
+}
+
+
+/* CORE SKILLS */
+
+.hero-skills {
+    width: 100% !important;
+    max-width: 1200px !important;
+
+    margin: 50px auto 0 !important;
+
+    text-align: center !important;
+}
+
+.hero-skills > p {
+    margin: 0 0 20px 0 !important;
+
+    color: #999 !important;
+    font-size: 13px !important;
+    letter-spacing: 4px !important;
+}
+
+.skill-badges {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+
+    gap: 12px !important;
+}
+
+.skill-badges span {
+    display: inline-block !important;
+
+    padding: 10px 20px !important;
+
+    border: 1px solid #333 !important;
+    border-radius: 30px !important;
+
+    background: #111 !important;
+
+    color: #eee !important;
+    font-size: 14px !important;
+}
+
+
+/* =====================================================
+   TABLET
+   ===================================================== */
+
+@media (max-width: 900px) {
+
+    .hero-container {
+        grid-template-columns: 1fr !important;
+        text-align: center !important;
+    }
+
+    .hero-content {
+        text-align: center !important;
+    }
+
+    .hero-description {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .hero-buttons {
+        justify-content: center !important;
+    }
+
+    .hero-photo {
+        width: 280px !important;
+        height: 280px !important;
+        grid-row: 1 !important;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+    .hero {
+        padding: 90px 6% 40px !important;
+    }
+
+    .hero-container {
+        gap: 35px !important;
+    }
+
+    .hero-photo {
+        width: 230px !important;
+        height: 230px !important;
+    }
+
+    .hero-content h1 {
+        font-size: 48px !important;
+    }
+
+    .hero-content h2 {
+        font-size: 24px !important;
+    }
+
+    .hero-description {
+        font-size: 15px !important;
+    }
+
+    .hero-buttons {
+        flex-direction: column !important;
+    }
+
+    .hero-buttons .btn {
+        width: 100% !important;
+        max-width: 280px !important;
+    }
+
+    .skill-badges span {
+        font-size: 13px !important;
+        padding: 9px 16px !important;
+    }
+}
