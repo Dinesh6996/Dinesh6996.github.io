@@ -1245,3 +1245,25 @@ footer {
     object-position: center top;
     border-radius: 50%;
 }
+/* FINAL CIRCULAR PROFILE PHOTO */
+
+.hero-photo {
+    width: 360px !important;
+    height: 360px !important;
+    border-radius: 50% !important;
+    overflow: hidden !important;
+    border: 3px solid #ff1e2d !important;
+    padding: 0 !important;
+    background: transparent !important;
+    box-sizing: border-box !important;
+}
+
+.hero-photo img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center top !important;
+    border-radius: 50% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
