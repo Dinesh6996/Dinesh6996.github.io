@@ -1181,3 +1181,51 @@ footer {
     }
 
 }
+/* =====================================================
+   FINAL HERO MATCH - DESKTOP
+   ===================================================== */
+
+@media (min-width: 901px) {
+
+    .hero {
+        min-height: calc(100vh - 75px);
+        padding: 65px 0 35px;
+    }
+
+    .hero-container {
+        min-height: 475px;
+        grid-template-columns: 1.25fr 0.75fr;
+        gap: 55px;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(50px, 6vw, 86px);
+        line-height: 0.94;
+        letter-spacing: -3px;
+    }
+
+    .hero-content h2 {
+        margin-top: 24px;
+        font-size: 32px;
+    }
+
+    .hero-description {
+        margin-top: 12px;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .hero-buttons {
+        margin-top: 28px;
+    }
+
+    .hero-photo {
+        width: 360px;
+        height: 360px;
+    }
+
+    .hero-skills {
+        margin-top: 15px;
+    }
+
+}
